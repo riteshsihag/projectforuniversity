@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="home">
+        <img src="../project3/img/logo.png" alt="Eduford">
+        <nav class="navlinks" id="navlinks">
+            <aside>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li class="navbar"> <a href="#">HOME</a></li>
+                <li class="navbar"><a href="#">ABOUT</a></li>
+                <li class="navbar"><a href="#">COURSE</a></li>
+                <li class="navbar"><a href="#">BLOG</a></li>
+                <li class="navbar"><a href="#">CONTACT</a></li>
+            </ul>
+        </aside>
+    </nav>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+        <h1 id="heading">World's Biggest University</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam magnam beatae
+            perferendis, atque at? <br> Quod nisi neque quisquam necessitatibus.</p>
+        <div> <button class="btn">Visit Us To Know More</button></div>
+    </div>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+        </script>
+</body>
+
+</html>

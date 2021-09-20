@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#home{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+#home::before{
+    content:'';
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../img/banner.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+#home img{
+    width: 150px;
+    margin: 25px 50px;
+}
+nav{
+    float: right;
+}
+
+#home nav {
+    float: right;
+}
+#home nav ul{
+    padding: 25px 70px;
+    display: flex;
+    position: relative;
+    
+}
+#home nav ul li{
+    list-style: none;
+    margin: 10px 10px;
+    
+}
+#home nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+    
+}
+#home nav ul li:hover:after{
+    width: 100%;
+}
+#home nav ul li a{
+    color: white;
+    text-decoration: none;   
+}
+#home h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 150px;
+}
+#home p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+#home div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20px 10px;
+
+}
+.btn{
+    border: 1px solid white;
+    background: transparent;
+    padding: 15px 25px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background:rgb(172, 39, 39);
+    border: 1px solid red;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:782px){ 
+
+    #home img{ width: 120px;
+        margin: 15px 25px;
+    }
+    
+    #home h1{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+#home p{
+    font-size: 1.1rem;
+    margin: 40px 40px;
+}
+#home nav{
+    background: red;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    position: absolute;
+    transition: 1s;
+    bottom: 0%;
+}
+#home nav ul{
+    display: block;
+    padding: 20px 20px;
+}
+#home nav ul li{
+    margin: 0px 10px;
+    
+    
+}
+#home nav ul li a{
+    font-size: 0.8rem;
+    
+}
+nav .fa{
+    display:block;
+    color: white;
+    width: 20px;
+    margin: auto;
+    padding: 20px 20px;
+    font-size: 20px;
+
+   
+    
+}
+}
